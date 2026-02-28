@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet"
+  />
+
+  <title>Alsaie Store - Modern Gaming</title>
+
+  <!--Connect the css-->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Background animated blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <!--Header-->
+  <header class="header glass-panel">
+    <!--Logo-->
+    <a href="#" class="logo-link">
+      <img class="logo" src="images/logo.png" alt="Lugx Logo" />
+    </a>
+
+    <!--Links and buttons-->
+    <nav class="nav-links" id="nav-links">
+      <a href="#" class="nav-item">Home</a>
+      <a href="#" class="nav-item">Our Shop</a>
+      <a href="#" class="nav-item">Contact</a>
+      <button class="btn btn-primary">Sign in</button>
+    </nav>
+    
+    <!-- Mobile Menu Toggle -->
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!--Landing page-->
+    <section class="landing-page">
+      <!--Left side-->
+      <div class="landing-page-left glass-panel">
+        <div class="hero-text">
+          <span class="subtitle">Welcome to lugx</span>
+          <h1>Best Games Store</h1>
+          <p>
+            LUGX Gaming is a fully responsive, modern glassmorphism UI for your
+            gaming websites. Enjoy the ultra-smooth aesthetics and seamless experience
+            across all devices. Step into the future of gaming storefronts.
+          </p>
+        </div>
+
+        <div class="search-container">
+          <input type="text" placeholder="Start Typing..."/>
+          <button class="btn btn-primary">Search</button>
+        </div>
+      </div>
+
+      <!--Right side-->
+      <div class="hero-image-wrapper">
+        <img class="hero-image floating" src="images/banner-image.jpg" alt="Banner Image" />
+      </div>
+    </section>
+
+    <!--Trending Games-->
+    <section class="trending-container">
+      <div class="section-header">
+        <div class="header-titles">
+          <span class="subtitle">Trending</span>
+          <h2>Trending Games</h2>
+        </div>
+        <button class="btn btn-secondary">View All</button>
+      </div>
+
+      <div class="trending-cards">
+        <div class="card glass-panel">
+          <div class="card-img-wrapper">
+             <img class="thumb" src="images/trending-01.jpg" alt="Trending Game 1" />
+             <div class="price-tag">$29.99</div>
+          </div>
+          <div class="card-info">
+            <div class="card-name">
+              <p class="category">Action</p>
+              <h3>Assassin's Creed</h3>
+            </div>
+            <a href="#" class="buy-btn">
+              <img src="images/online-shopping.png" alt="Buy" />
+            </a>
+          </div>
+        </div>
+
+        <div class="card glass-panel">
+          <div class="card-img-wrapper">
+             <img class="thumb" src="images/trending-01.jpg" alt="Trending Game 2" />
+             <div class="price-tag">$45.00</div>
+          </div>
+          <div class="card-info">
+            <div class="card-name">
+              <p class="category">Adventure</p>
+              <h3>Assassin's Creed</h3>
+            </div>
+            <a href="#" class="buy-btn">
+              <img src="images/online-shopping.png" alt="Buy" />
+            </a>
+          </div>
+        </div>
+
+        <div class="card glass-panel">
+          <div class="card-img-wrapper">
+             <img class="thumb" src="images/trending-01.jpg" alt="Trending Game 3" />
+             <div class="price-tag">$59.99</div>
+          </div>
+          <div class="card-info">
+            <div class="card-name">
+              <p class="category">RPG</p>
+              <h3>Assassin's Creed</h3>
+            </div>
+            <a href="#" class="buy-btn">
+              <img src="images/online-shopping.png" alt="Buy" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- JavaScript for Mobile Menu Toggle -->
+  <script>
+    const mobileMenuBtn = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
